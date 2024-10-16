@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: new_existingDockerfileGenerateManifest
+  name: newExistingDockerfileGenerateManifest
   labels:
-    app: new_existingDockerfileGenerateManifest
+    app: newExistingDockerfileGenerateManifest
     kubernetes.azure.com/generator: devhub
-  namespace: namespace-workflow-1729052246653
+  namespace: namespace-workflow-1729054586308
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: new_existingDockerfileGenerateManifest
+      app: newExistingDockerfileGenerateManifest
   template:
     metadata:
       labels:
-        app: new_existingDockerfileGenerateManifest
+        app: newExistingDockerfileGenerateManifest
     spec:
       containers:
-        - name: new_existingDockerfileGenerateManifest
+        - name: newExistingDockerfileGenerateManifest
           image: skdemoacr.azurecr.io/samples/contoso-website:latest
           imagePullPolicy: Always
           ports:
