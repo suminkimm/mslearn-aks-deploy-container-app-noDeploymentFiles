@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: newExistingDockerfileGenerateManifest
-  namespace: namespace-workflow-1729054586308
+  name: new-existingdockerfilegeneratemanifest
+  namespace: namespace-workflow-1729055110737
   labels:
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app: newExistingDockerfileGenerateManifest
+    app: new-existingdockerfilegeneratemanifest
   ports:
     - protocol: TCP
       port: 80
