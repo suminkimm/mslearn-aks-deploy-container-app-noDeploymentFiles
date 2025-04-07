@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: generatemanifestfiles-config
+  namespace: default
+  labels:
+    app.kubernetes.io/name: generatemanifestfiles
+    kubernetes.azure.com/generator: devhub
+data:
